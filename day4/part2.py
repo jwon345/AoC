@@ -15,21 +15,20 @@ for i,line in enumerate(input):
     lhs, rhs = card.split("|")
     lhs = lhs.split()
     rhs = rhs.split()
-    print(lhs)
-    # print(rhs)
+    #print(lhs)
+    # #print(rhs)
     count = 1
     for winningCard in lhs:
         if winningCard in rhs:
             try:
-                print("win card" + str(i + count + 1))
+                #print("win card" + str(i + count + 1))
                 multiplier[i + count] += 1*multiplier[i]
                 count += 1
-                #print(winningCard)
+                ##print(winningCard)
             except:
                 pass
-#print(total)
-print(sum(total))
+##print(total)
+# print(sum(total))
 print(sum(multiplier))
-print("Part 1 time = " + str(time.time() - startTime) + "s")
-
-
+print("Part 2 time = " + str(time.time() - startTime) + "s")
+ 

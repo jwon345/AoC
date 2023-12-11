@@ -24,4 +24,4 @@ for line in input:
 print(sum(total))
 print("Part 1 time = " + str(time.time() - startTime) + "s")
 
-
+ 
